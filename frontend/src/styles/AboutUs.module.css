@@ -1,0 +1,27 @@
+.main {
+  width: 70vw;
+  margin: 0 auto 50px;
+  min-width: 500px;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+.main section h2 {
+  text-align: center;
+  margin: 40px;
+}
+
+.main section p {
+  line-height: 2rem;
+  margin: 24px 4px;
+}
+
+.us ul {
+  list-style-position: inside;
+  width: fit-content;
+  margin: auto;
+}
+
+.us ul li {
+  margin: 8px 0;
+}
