@@ -1,46 +1,27 @@
 import './App.css';
-import { Route, Routes, Link, useLocation } from 'react-router-dom';
+import { Route, Routes, Link } from 'react-router-dom';
 import Main from './pages/Main';
 import AboutUs from './pages/AboutUs';
+import Maps from './pages/Maps';
+import Rules from './pages/Rules';
+import Nav from './components/Nav';
+import Prices from './pages/Prices';
 
 function App() {
-  const { pathname } = useLocation();
   return (
     <div className="App">
       <header>
         <h1>Pousada e Apartamentos Águia Azul</h1>
-        <nav>
-          <Link className={ pathname === '/' ? "link active" : 'link' } to="/">
-            Home
-          </Link>
-          <Link className={ pathname === '/about' ? "link active" : 'link' } to="/about">
-            Sobre nós
-          </Link>
-          <Link className={ pathname === '/galery' ? "link active" : 'link' } to="/galery">
-            Galeria
-          </Link>
-          <Link className={ pathname === '/prices' ? "link active" : 'link' } to="/prices">
-            Valores e pacotes
-          </Link>
-          <Link className={ pathname === '/maps' ? "link active" : 'link' } to="/maps">
-            Localização
-          </Link>
-          <Link className={ pathname === '/rules' ? "link active" : 'link' } to="/rules">
-            Políticas da empresa
-          </Link>
-          <Link className={ pathname === '/reservations' ? "link active" : 'link' } to="/reservations">
-            Faça sua reserva
-          </Link>
-        </nav>
+        <Nav />
       </header>
       <Routes>
         <Route exact path="/" element={ <Main /> } />
         <Route path="/about" element={ <AboutUs /> } />
         <Route path="/galery" element={ <Main /> } />
-        <Route path="/prices" element={ <Main /> } />
-        <Route path="/maps" element={ <Main /> } />
-        <Route path="/rules" element={ <Main /> } />
-        <Route path="/reservations" element={ <Main /> } />
+        <Route path="/prices" element={ <Prices /> } />
+        <Route path="/maps" element={ <Maps /> } />
+        <Route path="/rules" element={ <Rules /> } />
+        <Route path="/contact" element={ <Main /> } />
       </Routes>
       <footer>
         <h3>Pousada e Apartamentos Águia Azul</h3>
@@ -48,6 +29,8 @@ function App() {
         <p>Telefones</p>
         <p>(13) 9 8203 0438</p>
         <p>(13) 9 9669 7525</p>
+        <p>CNPJ: 17457952/0001-31</p>
+        <Link className="link" to="/contact">Fale conosco</Link>
       </footer>
     </div>
   );

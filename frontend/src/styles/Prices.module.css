@@ -1,0 +1,80 @@
+.main {
+  width: 80vw;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: auto;
+  line-height: 2rem;
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.radioSect {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.radioSect input {
+  margin-right: 8px;
+}
+
+.selectLabel {
+  width: 50%;
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+.select {
+  margin-left: 12px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: none;
+  background-color: transparent;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.select option {
+  background-color: var(--second);
+  color: var(--main);
+}
+
+.button {
+  margin: auto;
+  padding: 16px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--second);
+  color: var(--main);
+  cursor: pointer;
+}
+
+.result {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.result p {
+  font-size: 1.5rem;
+}
+
+.obs {
+  font-size: 0.9rem;
+}

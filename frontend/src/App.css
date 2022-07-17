@@ -4,6 +4,7 @@
   --second-darker: #15111a;
   --third: #79beee;
   --fourth: #377771;
+  --fourth-darker: #1d3d39;
   --accent: #ffcb77;
 }
 
@@ -22,6 +23,7 @@ body {
   background-color: var(--main);
   color: var(--second-darker);
   min-height: 100vh;
+  padding-bottom: 200px;
   position: relative;
 }
 
@@ -31,6 +33,13 @@ header {
   justify-content: space-around;
   align-items: center;
   padding: 12px;
+  background-color: var(--third);
+  box-shadow: 0 0 15px var(--second-darker);
+  margin-bottom: 16px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
 nav {
@@ -39,6 +48,7 @@ nav {
   align-items: center;
   flex-grow: 1;
   margin: 20px;
+  text-align: center;
 }
 
 h1 {
@@ -48,7 +58,15 @@ h1 {
 .link {
   text-decoration: none;
   font-size: 1.4rem;
-  color: var(--fourth);
+  color: var(--fourth-darker);
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+
+.link:active {
+  color: var(--accent);
 }
 
 .active {
@@ -65,4 +83,13 @@ footer {
   background-color: var(--second-darker);
   color: var(--main);
   padding: 12px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  color: var(--second-darker);
+  background-color: var(--accent);
 }

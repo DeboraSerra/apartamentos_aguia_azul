@@ -1,0 +1,50 @@
+.main {
+  margin-bottom: 100px;
+}
+
+.main h2 {
+  text-align: center;
+  margin: 40px;
+}
+
+.main section p {
+  line-height: 2rem;
+  margin: 24px 4px;
+}
+
+.distance {
+  width: 80vw;
+  margin: auto;
+  text-align: center;
+}
+
+.map {
+  box-shadow: 2px 2px 5px var(--second);
+  width: 80vw;
+  margin: auto;
+}
+
+.beach {
+  width: 80vw;
+  margin: auto;
+}
+
+.beach ul {
+  list-style: none;
+  width: 50%;
+  margin: auto;
+}
+
+.beach ul h3 {
+  text-align: center;
+  margin: 20px;
+}
+
+.beach ul li {
+  display: flex;
+  align-items: center;
+}
+
+.beach ul h4 {
+  margin-right: 12px;
+}
