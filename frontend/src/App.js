@@ -6,6 +6,7 @@ import Maps from './pages/Maps';
 import Rules from './pages/Rules';
 import Nav from './components/Nav';
 import Prices from './pages/Prices';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
         <Route path="/prices" element={ <Prices /> } />
         <Route path="/maps" element={ <Maps /> } />
         <Route path="/rules" element={ <Rules /> } />
-        <Route path="/contact" element={ <Main /> } />
+        <Route path="/contact" element={ <Contact /> } />
       </Routes>
       <footer>
         <h3>Pousada e Apartamentos Águia Azul</h3>
